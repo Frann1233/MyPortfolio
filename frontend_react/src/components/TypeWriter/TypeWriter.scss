@@ -1,0 +1,27 @@
+.app_first_section_typewriter_first {
+  padding-left: 2rem;
+
+  p.open_h1::before {
+    content: "<h1>";
+    position: relative;
+    display: flex;
+
+    margin-left: -25px;
+
+    font-family: var(--detail-font);
+    font-size: 1.2rem;
+
+    color: #515152;
+  }
+
+  p.close_h1::after {
+    content: "<h1/>";
+    position: relative;
+    bottom: -25px;
+
+    font-family: var(--detail-font);
+    font-size: 1.2rem;
+
+    color: #515152;
+  }
+}

@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(./fonts/OpenSans-Light.ttf) format("truetype");
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;800&display=swap");
+:root {
+  --color-primary: #181818;
+  --color-secondary: rgb(220, 220, 220);
+  --aqua-color: #08fdd8;
+  --darkgray-color: #1d1d1d;
+  --white-color: white;
+  --black-color: black;
+  --border-color: rgb(220, 220, 220, 0.4);
+  --main-font: "Open Sans", sans-serif;
+  --detail-font: "Dancing Script", cursive;
+
+  --navigation-item-bg-color-mobile: 220, 220, 220;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--darkgray-color);
+}
+
+html {
+  background-color: var(--darkgray-color);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h3 {
+  background-color: var(--darkgray-color);
+  padding-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-h2 {
+  color: var(--aqua-color);
+  font-family: var(--main-font);
+  padding-left: 1rem;
+  font-size: 3rem;
+}
+
+.main-p {
+  padding-left: 1rem;
+
+  font-family: var(--main-font);
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 1.4rem;
+  font-size: 18px;
+
+  color: var(--white-color);
+}
+
+.section_container {
+  width: 100%;
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 var(--aqua-color);
+  color: var(--black-color);
+  transition: ease-out 0.6s;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-h2 {
+    font-size: 2rem;
+  }
+  .main-p {
+    font-size: 14px;
+    word-spacing: 0;
+    line-height: 1.3rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-height: 331px) and (max-height: 580px) {
+  .main-p {
+    font-size: 14px;
+    word-spacing: 0;
+    line-height: 1.3rem;
+    padding-right: 1rem;
+  }
+}

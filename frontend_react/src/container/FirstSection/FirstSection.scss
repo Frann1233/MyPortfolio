@@ -1,0 +1,168 @@
+.app_first_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  min-height: 100vh;
+  width: 100%;
+
+  background-color: var(--darkgray-color);
+}
+
+.app_first_section_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center left;
+  justify-content: center;
+  top: 28%;
+
+  width: 100%;
+
+  padding-left: 2rem;
+
+  font-family: var(--main-font);
+
+  font-size: 3rem;
+  font-weight: bold;
+
+  color: var(--white-color);
+}
+
+.app_first_section_animated::before {
+  content: "<h1>";
+  position: relative;
+  display: flex;
+
+  margin-left: -25px;
+
+  font-family: var(--detail-font);
+  font-size: 1.2rem;
+
+  color: #515152;
+}
+
+.app_first_section_animated::after {
+  content: "<h1/>";
+  position: relative;
+
+  margin-left: -25px;
+
+  font-family: var(--detail-font);
+  font-size: 1.2rem;
+
+  color: #515152;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// For Mobile devices: 320px-480px
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .app_first_section_animated::before {
+    font-size: 0.8rem;
+  }
+  .app_first_section_animated::after {
+    font-size: 0.8rem;
+  }
+
+  Button {
+    height: 2.7rem;
+    width: 11rem;
+
+    margin-top: 3rem;
+    margin-left: 0rem !important;
+
+    font-size: 1rem;
+  }
+  .app_first_section_typewriter_first {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  .pop-in .app_first_section_job_title {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    padding-top: 0;
+    line-height: 3rem;
+  }
+  .app_first_section {
+    padding-left: 0;
+
+    .app_first_section_text {
+      padding-left: 0.5rem;
+      margin-bottom: 10rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// For Tablets or iPad: 480px - 768px
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  Button {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .app_first_section_typewriter_first {
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  .pop-in .app_first_section_job_title {
+    font-size: 1.2rem;
+    padding-top: 0;
+  }
+  .app_first_section {
+    padding-left: 0;
+
+    .app_first_section_text {
+      padding-left: 0.5rem;
+      margin-bottom: 10rem;
+      font-size: 2.5rem;
+    }
+  }
+  .app_first_section_animated::before {
+    margin-top: 2rem;
+  }
+}
+
+// For Laptop or small-size screen: 768px - 1024px
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .app_first_section_typewriter_first p.open_h1::before {
+    padding-left: 0.6rem;
+    height: 44px;
+  }
+
+  Button {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .app_first_section_typewriter_first {
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  .pop-in .app_first_section_job_title {
+    padding-top: 0;
+  }
+  .app_first_section {
+    padding-left: 0;
+
+    .app_first_section_text {
+      padding-left: 0.5rem;
+      margin-bottom: 10rem;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+// For Desktop or large-size screen: 1024px - 1200px
+// @media screen and (min-width: 1024px) and (max-width: 1280px) {
+// }
+
+// For Extra-large size device: 1200px and more

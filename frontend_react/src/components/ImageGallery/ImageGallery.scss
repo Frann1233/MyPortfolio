@@ -1,0 +1,23 @@
+.app_work_gallery_container {
+  .text-zone-section-start h4:first-of-type::before {
+    padding-left: 1rem;
+  }
+
+  .text-zone-section-end h4:first-of-type::before {
+    padding-left: 1rem;
+  }
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.react-simple-image-viewer__close {
+  top: 45px !important;
+}

@@ -1,0 +1,32 @@
+.animate {
+  animation: pop-in 0.7s ease-in-out;
+}
+
+.button {
+  width: 15rem;
+  height: 3rem;
+
+  border: 1px solid var(--aqua-color);
+  border-radius: 25px;
+  background-color: transparent;
+  color: var(--aqua-color);
+
+  letter-spacing: 2px;
+  font-family: var(--main-font);
+  font-size: 1rem;
+
+  margin-left: 1rem;
+}
+
+.button:hover {
+  box-shadow: inset 400px 0 0 0 var(--aqua-color);
+  color: var(--black-color);
+}
+
+.showButton {
+  visibility: visible;
+}
+
+.hideButton {
+  visibility: hidden;
+}
